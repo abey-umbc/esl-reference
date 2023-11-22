@@ -1,0 +1,25 @@
+.insights-container {
+  display: flex;
+  gap: 10%;
+}
+
+.type-selector {
+  width: 40%;
+  /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  
+}
+
+.content-display {
+  width: 100%;
+  /* Adjust the width as needed */
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+/* Add styles for buttons, transitions, etc. */

@@ -1,0 +1,83 @@
+.label {
+  font-size: 16px;
+  width: 54%;
+  border: 1px solid black;
+  padding: 8px;
+}
+
+article .flex {
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+  width: 100%;
+}
+
+article .title {
+  font-size: 26px;
+  margin: 4px 0;
+  text-align: justify;
+}
+
+.big-divider {
+  border-bottom: 7px solid #000;
+}
+
+.small-divider {
+  border-bottom: 3px solid #000;
+}
+
+.xsmall-divider {
+  border-bottom: 1.5px solid #000;
+}
+
+.small-font {
+  font-size: 12px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+  position: relative;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+.permissions hr {
+  width: 100%;
+}
+
+.content div {
+  padding: 4px 10px;
+}
+
+.value {
+  position: absolute;
+  /* Absolutely position the value within the summary */
+  right: 5px;
+  font-size: 16px;
+}
+
+.annotation {
+  vertical-align: super;
+  font-size: smaller;
+  padding: 0;
+  margin: 0;
+}
+
+.value img {
+  margin-right: 4px;
+}
+
+.notclickable{
+  pointer-events: none;
+  list-style: none;
+  padding-left: 6px;
+}
