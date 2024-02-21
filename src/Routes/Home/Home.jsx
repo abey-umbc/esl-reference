@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../../Components/Header/Header";
 import { Link } from "react-router-dom";
 import {
@@ -15,11 +15,12 @@ import gmail from "../../../public/assets/images/gmail.png";
 import music from "../../../public/assets/images/music.png";
 import maps from "../../../public/assets/images/google-maps.png";
 import photos from "../../../public/assets/images/photos.png";
-import { SearchIcon, ChevronDownIcon } from "@chakra-ui/icons";
+import { SearchIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import "./Home.css";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
 
   const options = [
     { name: "Google Chrome", path: "/app/chrome", image: chrome },
@@ -38,6 +39,12 @@ const Home = () => {
     setSearchTerm(e.target.value);
   };
 
+  useEffect(() => {
+    if (searchTerm.length) {
+      setIsOpen(true);
+    }
+  }, [searchTerm.length]);
+
   return (
     <main>
       <Header />
@@ -47,7 +54,11 @@ const Home = () => {
             <h1>Ethical Software: Your right, our mission.</h1>
             <small>Empowering users with ethical software choices.</small>
           </div>
-          <div className="box" style={{ padding: "0 20%" }}>
+          <div
+            className="box"
+            style={{ padding: "0 20%" }}
+            pointerEvents="none"
+          >
             <InputGroup>
               <InputLeftElement pointerEvents="none">
                 <SearchIcon />
@@ -58,28 +69,40 @@ const Home = () => {
                 placeholder="Search for an Application, Software / Service"
                 onChange={handleInputChange}
               />
-              <InputRightElement>
-                <ChevronDownIcon />
+              <InputRightElement onClick={() => setIsOpen(!isOpen)}>
+                {isOpen ? <ChevronUpIcon /> : <ChevronDownIcon />}
               </InputRightElement>
             </InputGroup>
-            <Card variant="filled" className="app-list">
-              <CardBody className="flex-column">
-                {filteredOptions.map((option, index) => {
-                  return (
-                    <Link to={option.path} key={index} className="hover-fade">
-                      <div className="flex">
-                        <img
-                          src={option.image}
-                          className="icon"
-                          alt={option.name}
-                        />
-                        <Text>{option.name}</Text>
-                      </div>
-                    </Link>
-                  );
-                })}
-              </CardBody>
-            </Card>
+            {isOpen && (
+              <Card variant="filled" className="app-list">
+                <CardBody className="flex-column">
+                  {filteredOptions.length > 0 ? (
+                    filteredOptions.map((option, index) => {
+                      return (
+                        <Link
+                          to={option.path}
+                          key={index}
+                          className="hover-fade"
+                        >
+                          <div className="flex">
+                            <img
+                              src={option.image}
+                              className="icon"
+                              alt={option.name}
+                            />
+                            <Text>{option.name}</Text>
+                          </div>
+                        </Link>
+                      );
+                    })
+                  ) : (
+                    <Text style={{ textAlign: "center" }}>
+                      {"No Results Found"}
+                    </Text>
+                  )}
+                </CardBody>
+              </Card>
+            )}
           </div>
         </div>
       </section>
