@@ -12,7 +12,7 @@ const Header = () => {
       </div>
       <Link to="/">
         <h1 className="box page-header hover-underline color-yellow">
-          Ethical Software Lab
+          Ethical Software Lab (Beta)
         </h1>
       </Link>
       {/* <nav>

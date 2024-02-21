@@ -7,7 +7,7 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
-  Text
+  Text,
 } from "@chakra-ui/react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
@@ -107,9 +107,7 @@ const Insights = () => {
       <Header />
       <div className="insights-container box">
         <aside className="type-selector">
-          <Breadcrumb
-            spacing="8px"
-          >
+          <Breadcrumb spacing="8px">
             <BreadcrumbItem>
               <BreadcrumbLink href="/">
                 <ChevronLeftIcon />
@@ -120,6 +118,10 @@ const Insights = () => {
           <div>
             <Text fontSize="24px" fontWeight="bold">
               Digital Nutrition Labels
+            </Text>
+            <Text fontSize="sm" style={{ marginBottom: "20px" }}>
+              The labels and values shown are solely for illustrative purposes;
+              Actual measurement is in progress.
             </Text>
             <Text fontSize="sm">
               Use the arrows below to explore various Nutrition Label formats.

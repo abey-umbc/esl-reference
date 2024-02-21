@@ -1,7 +1,10 @@
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="flex" style={{ flexDirection: "column", gap: "4px" }}>
+      <div
+        className="flex"
+        style={{ flexDirection: "column", gap: "4px", marginBottom: "6px" }}
+      >
         <span className="small-font">
           <span className="annotation">*</span> A prompt may ask you to allow or
           reject this permission once or every time it&apos;s needed, based on
@@ -10,6 +13,13 @@ const Footer = () => {
         <span className="small-font">
           <span className="annotation">†</span> Not granting this permission may
           reduce app features.
+        </span>
+      </div>
+      <hr className="x-small-divider" />
+      <div>
+        <span className="small-font">
+          The values presented in the label above are solely for illustrative
+          purposes. Actual measurement is in progress.
         </span>
       </div>
     </div>
