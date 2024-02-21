@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Header from "../../Components/Header/Header";
 import Label from "../../Components/Label/Label";
+import { Link } from "react-router-dom";
 import "./Insights.css";
 import {
   Breadcrumb,
@@ -109,9 +110,11 @@ const Insights = () => {
         <aside className="type-selector">
           <Breadcrumb spacing="8px">
             <BreadcrumbItem>
-              <BreadcrumbLink href="/">
-                <ChevronLeftIcon />
-                Back to Search
+              <BreadcrumbLink>
+                <Link to="/">
+                  <ChevronLeftIcon />
+                  Back to Search
+                </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
           </Breadcrumb>
