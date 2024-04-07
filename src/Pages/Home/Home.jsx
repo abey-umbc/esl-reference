@@ -10,10 +10,10 @@ import {
   CardBody,
   Text,
 } from "@chakra-ui/react";
-import chrome from "../../../public/assets/images/chrome.png";
-import gmail from "../../../public/assets/images/gmail.png";
+import web from "../../../public/assets/images/web.png";
+import mail from "../../../public/assets/images/mail.png";
 import music from "../../../public/assets/images/music.png";
-import maps from "../../../public/assets/images/google-maps.png";
+import maps from "../../../public/assets/images/maps.png";
 import photos from "../../../public/assets/images/photos.png";
 import { SearchIcon, ChevronDownIcon, ChevronUpIcon } from "@chakra-ui/icons";
 import "./Home.css";
@@ -23,11 +23,11 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const options = [
-    { name: "Google Chrome", path: "/app/chrome", image: chrome },
-    { name: "Gmail", path: "/app/gmail", image: gmail },
-    { name: "Apple Music", path: "/app/applemusic", image: music },
-    { name: "Google Maps", path: "/app/googlemaps", image: maps },
-    { name: "Apple Photos", path: "/app/applephotos", image: photos },
+    { name: "UMBC Browser", path: "/app/umbc-browser", image: web },
+    { name: "UMBC Email", path: "/app/umbc-email", image: mail },
+    { name: "UMBC Music", path: "/app/umbc-music", image: music },
+    { name: "UMBC Maps", path: "/app/umbc-maps", image: maps },
+    { name: "UMBC Photos", path: "/app/umbc-photos", image: photos },
   ];
 
   const filteredOptions = options.filter((option) =>

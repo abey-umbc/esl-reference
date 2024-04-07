@@ -13,11 +13,11 @@ import {
 import { ChevronLeftIcon, ChevronRightIcon } from "@chakra-ui/icons";
 
 // Import all the props for the different apps
-import ChromeProps from "../../data/Labels/Chrome";
-import GmailProps from "../../data/Labels/Gmail";
-import AppleMusicProps from "../../data/Labels/AppleMusic";
-import GoogleMapsProps from "../../data/Labels/GoogleMaps";
-import ApplePhotosProps from "../../data/Labels/ApplePhotos";
+import webProps from "../../data/Labels/UmbcBrowser";
+import mailProps from "../../data/Labels/UmbcEmail";
+import musicProps from "../../data/Labels/UmbcMusic";
+import mapsProps from "../../data/Labels/UmbcMaps";
+import photosProps from "../../data/Labels/UmbcPhotos";
 
 const Insights = () => {
   const { id } = useParams();
@@ -25,11 +25,11 @@ const Insights = () => {
 
   // Map app names to their respective props
   const appProps = {
-    chrome: ChromeProps,
-    gmail: GmailProps,
-    applemusic: AppleMusicProps,
-    googlemaps: GoogleMapsProps,
-    applephotos: ApplePhotosProps,
+    "umbc-browser": webProps,
+    "umbc-email": mailProps,
+    "umbc-music": musicProps,
+    "umbc-maps": mapsProps,
+    "umbc-photos": photosProps,
   };
 
   // State to keep track of the current type
@@ -67,7 +67,8 @@ const Insights = () => {
 
   // Determine the content to render based on the current type and app id
   const renderContent = () => {
-    const props = appProps[id.toLowerCase()] || ChromeProps; // Fallback to ChromeProps if id doesn't match
+    console.log(id);
+    const props = appProps[id.toLowerCase()] || webProps; // Fallback to BrowserProps if id doesn't match
     switch (currentType) {
       case "collapsed":
       case "expanded":

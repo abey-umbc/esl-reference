@@ -36,7 +36,8 @@ const Header = ({
                   import.meta.url,
                 ).href
               }
-              alt="chrome"
+              style={{ width: "40px", height: "40px", borderRadius: "4px" }}
+              alt={appName}
             />
             <span style={{ alignItems: "center" }}> {appName} </span>
             <span style={{ marginLeft: "auto" }}>

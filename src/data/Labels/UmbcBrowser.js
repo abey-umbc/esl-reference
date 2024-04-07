@@ -1,8 +1,8 @@
 export default {
   headerProps: {
-    appName: "Google Chrome",
+    appName: "UMBC Browser",
     platform: "Android",
-    iconSlug: "chrome",
+    iconSlug: "web",
     isAccessible: true,
     version: "94.4.068",
     evaluatedOn: "January 1, 2023",
