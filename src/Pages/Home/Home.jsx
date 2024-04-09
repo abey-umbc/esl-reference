@@ -51,7 +51,7 @@ const Home = () => {
       <section className="box" style={{ marginTop: "40px" }}>
         <div className="flex-column">
           <div className="title">
-            <h1>Ethical Software: Your right, our mission.</h1>
+            <h1>Ethical Software: Your rights, our mission.</h1>
             <small>Empowering users with ethical software choices.</small>
           </div>
           <div
