@@ -19,15 +19,15 @@ article .title {
 }
 
 .big-divider {
-  border-bottom: 7px solid #000;
+  border-bottom: 5px solid #000;
 }
 
 .small-divider {
-  border-bottom: 3px solid #000;
+  border-bottom: 2px solid #000;
 }
 
 .xsmall-divider {
-  border-bottom: 1.5px solid #000;
+  border-bottom: 1px solid #000;
 }
 
 .small-font {

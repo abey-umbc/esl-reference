@@ -67,7 +67,6 @@ const Insights = () => {
 
   // Determine the content to render based on the current type and app id
   const renderContent = () => {
-    console.log(id);
     const props = appProps[id.toLowerCase()] || webProps; // Fallback to BrowserProps if id doesn't match
     switch (currentType) {
       case "collapsed":

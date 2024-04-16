@@ -15,13 +15,6 @@ const Footer = () => {
           reduce app features.
         </span>
       </div>
-      <hr className="x-small-divider" />
-      <div>
-        <span className="small-font">
-          The values presented in the label above are solely for illustrative
-          purposes. Actual measurement is in progress.
-        </span>
-      </div>
     </div>
   );
 };
