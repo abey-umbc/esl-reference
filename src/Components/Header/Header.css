@@ -1,23 +1,61 @@
 .logo {
-  width: 128px;
+  width: 10rem;
 }
-.page-header{
+
+.page-header {
   background-image: url(../../../public/assets/images/maryland-flag-header-1280x180-black.jpg);
   background-size: contain;
+  background-position: center;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.5rem;
+  padding: 1.5rem;
 }
+
 .h-navlist {
-  background-color: #FDB515;
-  border-radius: 6px;
+  background-color: #fdb515;
+  border-radius: 0.375rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   list-style: none;
   font-weight: bold;
-  height: 60px;
-  padding: 0 20%;
+  height: 4rem;
+  padding: 0 1.5rem;
 }
-/* nav{
-  padding: 0 120px 0;
-} */
+
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 10rem;
+  }
+  .page-header {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  .h-navlist {
+    height: auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .h-navlist li {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .logo {
+    width: 10rem;
+  }
+
+  .page-header {
+    font-size: 1.75rem;
+    padding: 1rem;
+  }
+  .h-navlist {
+    padding: 1rem;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .h-navlist li {
+    margin-bottom: 1rem;
+  }
+}

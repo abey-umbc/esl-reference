@@ -46,19 +46,15 @@ const Home = () => {
   }, [searchTerm.length]);
 
   return (
-    <main>
+    <>
       <Header />
-      <section className="box" style={{ marginTop: "40px" }}>
+      <div className="box" style={{ marginTop: "40px" }}>
         <div className="flex-column">
           <div className="title">
             <h1>Ethical Software: Your rights, our mission.</h1>
             <small>Empowering users with ethical software choices.</small>
           </div>
-          <div
-            className="box"
-            style={{ padding: "0 20%" }}
-            pointerEvents="none"
-          >
+          <div className="search-box" pointerEvents="none">
             <InputGroup>
               <InputLeftElement pointerEvents="none">
                 <SearchIcon />
@@ -82,7 +78,7 @@ const Home = () => {
                         <Link
                           to={option.path}
                           key={index}
-                          className="hover-fade"
+                          className="hover-fade app-list-item"
                         >
                           <div className="flex">
                             <img
@@ -90,7 +86,7 @@ const Home = () => {
                               className="icon"
                               alt={option.name}
                             />
-                            <Text>{option.name}</Text>
+                            <Text className="app-item-text">{option.name}</Text>
                           </div>
                         </Link>
                       );
@@ -105,8 +101,8 @@ const Home = () => {
             )}
           </div>
         </div>
-      </section>
-    </main>
+      </div>
+    </>
   );
 };
 

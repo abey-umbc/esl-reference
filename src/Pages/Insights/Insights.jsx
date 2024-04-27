@@ -111,9 +111,9 @@ const Insights = () => {
           <Breadcrumb spacing="8px">
             <BreadcrumbItem>
               <BreadcrumbLink>
-                <Link to="/">
-                  <ChevronLeftIcon />
-                  Back to Search
+                <Link to="/" className="back-button">
+                  <ChevronLeftIcon boxSize={8} />
+                  <b>Back to Search</b>
                 </Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
@@ -130,19 +130,35 @@ const Insights = () => {
               Use the arrows below to explore various Nutrition Label formats.
             </Text>
           </div>
-          <div style={{ display: "flex", flexDirection: "row", gap: "8px" }}>
-            <button onClick={goToPrevType} disabled={currentTypeIndex === 0}>
-              <ChevronLeftIcon color={currentTypeIndex === 0 && "gray.200"} />
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "row",
+              alignItems: "center",
+              gap: "16px",
+            }}
+          >
+            <button
+              onClick={goToPrevType}
+              disabled={currentTypeIndex === 0}
+              className="nav-button"
+            >
+              <ChevronLeftIcon
+                color={currentTypeIndex === 0 && "gray.500"}
+                boxSize={6}
+              />
             </button>
-            <Text fontSize="20px" textTransform="capitalize">
+            <Text fontSize="20px" textTransform="capitalize" textAlign="center">
               {types[currentTypeIndex] + " Label"}
             </Text>
             <button
               onClick={goToNextType}
               disabled={currentTypeIndex === types.length - 1}
+              className="nav-button"
             >
               <ChevronRightIcon
-                color={currentTypeIndex === types.length - 1 && "gray.200"}
+                color={currentTypeIndex === types.length - 1 && "gray.500"}
+                boxSize={6}
               />
             </button>
           </div>
