@@ -8,8 +8,7 @@ import {
   InputRightElement,
   Card,
   CardBody,
-  Text,
-  Button
+  Text
 } from "@chakra-ui/react";
 import web from "../../../public/assets/images/web.png";
 import mail from "../../../public/assets/images/mail.png";
@@ -100,17 +99,6 @@ const Home = () => {
                 </CardBody>
               </Card>
             )}
-          </div>
-          <div className="feedback-button">
-            <Button
-              as="a"
-              href="https://umbc.co1.qualtrics.com/jfe/form/SV_4JHzWf3InGequGO"
-              target="_blank"
-              colorScheme="blue"
-              variant="outline"
-            >
-              Give Feedback
-            </Button>
           </div>
         </div>
       </div>
