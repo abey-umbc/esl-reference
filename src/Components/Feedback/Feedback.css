@@ -1,0 +1,15 @@
+.feedback-container {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999;
+}
+
+.close-button {
+  background-color: transparent;
+  color: #017bfe;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-left: 0.625rem;
+}

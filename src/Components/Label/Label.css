@@ -76,8 +76,49 @@ summary::-webkit-details-marker {
   margin-right: 4px;
 }
 
-.notclickable{
+.notclickable {
   pointer-events: none;
   list-style: none;
   padding-left: 6px;
+}
+
+@media screen and (max-width: 1298px) {
+  .label {
+    width: 45%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1003px) {
+  .label {
+    width: 54%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .label {
+    width: 65%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .label {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 651px) {
+  .label {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .content-display .label {
+    width: 100%;
+  }
 }

@@ -1,10 +1,9 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
 import logo from "../../../public/assets/images/UMBC-primary-logo.png";
-
 const Header = () => {
   return (
-    <header>
+    <div className="header-container">
       <div className="box bg-black">
         <Link to="/">
           <img src={logo} alt="logo" className="logo" />
@@ -31,8 +30,7 @@ const Header = () => {
           </li>
         </ul>
       </nav> */}
-    </header>
+    </div>
   );
 };
-
 export default Header;
