@@ -1,6 +1,6 @@
 export default {
   headerProps: {
-    appName: "UMBC Email",
+    appName: "Example Email",
     platform: "Android",
     iconSlug: "mail",
     isAccessible: true,
