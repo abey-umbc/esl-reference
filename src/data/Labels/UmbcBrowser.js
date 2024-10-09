@@ -1,6 +1,6 @@
 export default {
   headerProps: {
-    appName: "UMBC Browser",
+    appName: "Example Browser",
     platform: "Android",
     iconSlug: "web",
     isAccessible: true,
