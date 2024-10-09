@@ -1,6 +1,6 @@
 export default {
   headerProps: {
-    appName: "UMBC Photos",
+    appName: "Example Photos",
     platform: "iOS",
     isAccessible: true,
     version: "7.0",
