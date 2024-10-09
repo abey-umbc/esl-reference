@@ -1,6 +1,6 @@
 export default {
   headerProps: {
-    appName: "UMBCMusic",
+    appName: "Example Music",
     platform: "iOS",
     iconSlug: "music",
     isAccessible: true,
