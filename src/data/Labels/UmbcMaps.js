@@ -1,6 +1,6 @@
 export default {
   headerProps: {
-    appName: "UMBC Maps",
+    appName: "Example Maps",
     platform: "Android",
     isAccessible: true,
     version: "11.5",
