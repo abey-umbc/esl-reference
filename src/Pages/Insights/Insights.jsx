@@ -25,11 +25,11 @@ const Insights = () => {
 
   // Map app names to their respective props
   const appProps = {
-    "umbc-browser": webProps,
-    "umbc-email": mailProps,
-    "umbc-music": musicProps,
-    "umbc-maps": mapsProps,
-    "umbc-photos": photosProps,
+    "example-browser": webProps,
+    "example-email": mailProps,
+    "example-music": musicProps,
+    "example-maps": mapsProps,
+    "example-photos": photosProps,
   };
 
   // State to keep track of the current type
