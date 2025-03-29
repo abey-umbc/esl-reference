@@ -1,48 +1,48 @@
 export default {
   headerProps: {
-    appName: "Example Photos",
+    appName: "Aetheria",
     platform: "iOS",
+    iconSlug: "aetheria", // You can customize this if you have a specific icon slug
     isAccessible: true,
-    version: "7.0",
-    iconSlug: "photos",
-    evaluatedOn: "November 18, 2023",
+    version: "1.6.4",
+    evaluatedOn: "February 18, 2025",
   },
   interruptionsProps: {
-    notifications: 2,
-    popups: 0,
-    text: 0,
+    notifications: 3,
+    popups: 2,
+    text: 1,
   },
   privacyProps: {
     permissions: {
       camera: {
         label: "Camera",
-        access: "Mandatory",
+        access: "Optional",
         prompts: true,
-        limits: false,
+        limits: true,
       },
       mic: {
         label: "Microphone",
-        access: "Mandatory",
+        access: "Optional",
         prompts: true,
-        limits: false,
+        limits: true,
       },
       photos: {
         label: "Photos",
-        access: "Mandatory",
+        access: "Optional",
         prompts: true,
         limits: false,
       },
       loc: {
         label: "Location",
-        access: "Optional",
+        access: "Mandatory",
         prompts: true,
-        limits: true,
+        limits: false,
       },
       contacts: {
         label: "Contacts",
-        access: "Optional",
-        prompts: true,
-        limits: true,
+        access: "Not Applicable",
+        prompts: false,
+        limits: false,
       },
       storage: {
         label: "Storage",
@@ -54,7 +54,7 @@ export default {
         label: "Biometrics",
         access: "Optional",
         prompts: true,
-        limits: true,
+        limits: false,
       },
       healthData: {
         label: "Health Data",
@@ -65,34 +65,34 @@ export default {
     },
     dataHandling: {
       dataCollection: "Yes",
-      dataTransmissionFreq: "Regular",
-      thirdPartySharing: "No",
-      thirdPartySharingConsent: "No",
+      dataTransmissionFreq: "Always",
+      thirdPartySharing: "Yes",
+      thirdPartySharingConsent: "Yes",
     },
     updateAlerts: "Yes",
   },
   userRightsProps: {
-    adsOptOut: "Not Applicable",
+    adsOptOut: "Allowed",
     accountDel: "Allowed",
     dataExport: "Allowed",
   },
   monetizationProps: {
     usageCost: {
       price: "Free",
-      note: "iCloud storage above the free tier requires a subscription",
+      note: "with in-app purchases",
     },
-    recurringPayments: "Yes",
-    inAppPurchases: "No",
+    recurringPayments: "No",
+    inAppPurchases: "Yes",
   },
   deviceResourcesProps: {
-    batteryImpact: 3,
+    batteryImpact: 5,
     storage: {
-      size: 150,
+      size: 180,
       unit: "MB",
     },
     internet: {
       req: "Yes",
-      dataPh: "Varies",
+      dataPh: "30MB/hr",
     },
   },
 };

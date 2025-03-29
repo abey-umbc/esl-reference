@@ -1,16 +1,16 @@
 export default {
   headerProps: {
-    appName: "Example Maps",
-    platform: "Android",
+    appName: "Bearable: Symptom & Mood Tracker",
+    platform: "iOS",
+    iconSlug: "health",
     isAccessible: true,
-    version: "11.5",
-    iconSlug: "maps",
-    evaluatedOn: "November 18, 2023",
+    version: "1.0.5405",
+    evaluatedOn: "February 8, 2025", 
   },
   interruptionsProps: {
-    notifications: 5,
-    popups: 1,
-    text: 0,
+    notifications: 4,
+    popups: 3,       
+    text: 1,         
   },
   privacyProps: {
     permissions: {
@@ -42,11 +42,11 @@ export default {
         label: "Contacts",
         access: "Optional",
         prompts: true,
-        limits: true,
+        limits: false,
       },
       storage: {
         label: "Storage",
-        access: "Optional",
+        access: "Mandatory",
         prompts: true,
         limits: false,
       },
@@ -58,8 +58,8 @@ export default {
       },
       healthData: {
         label: "Health Data",
-        access: "Not Applicable",
-        prompts: false,
+        access: "Optional",
+        prompts: true,
         limits: false,
       },
     },
@@ -79,20 +79,20 @@ export default {
   monetizationProps: {
     usageCost: {
       price: "Free",
-      note: "Offers in-app purchases for additional services",
+      note: "with in-app purchases",
     },
-    recurringPayments: "No",
+    recurringPayments: "Yes",
     inAppPurchases: "Yes",
   },
   deviceResourcesProps: {
     batteryImpact: 6,
     storage: {
-      size: 120,
+      size: 220,
       unit: "MB",
     },
     internet: {
       req: "Yes",
-      dataPh: "Varies",
+      dataPh: "40MB/hr", 
     },
   },
 };

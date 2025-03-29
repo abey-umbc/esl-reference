@@ -1,35 +1,35 @@
 export default {
   headerProps: {
-    appName: "Example Browser",
-    platform: "Android",
-    iconSlug: "web",
+    appName: "Moodnotes",
+    platform: "iOS",
+    iconSlug: "mood",
     isAccessible: true,
-    version: "94.4.068",
-    evaluatedOn: "January 1, 2023",
+    version: "2.8.4",
+    evaluatedOn: "February 18, 2025",
   },
   interruptionsProps: {
-    notifications: 3,
-    popups: 4,
+    notifications: 4,
+    popups: 2,
     text: 1,
   },
   privacyProps: {
     permissions: {
       camera: {
         label: "Camera",
-        access: "Mandatory",
+        access: "Optional",
         prompts: true,
-        limits: false,
+        limits: true,
       },
       mic: {
         label: "Microphone",
         access: "Optional",
-        prompts: false,
+        prompts: true,
         limits: true,
       },
       photos: {
         label: "Photos",
-        access: "Not Applicable",
-        prompts: false,
+        access: "Mandatory",
+        prompts: true,
         limits: false,
       },
       loc: {
@@ -46,15 +46,15 @@ export default {
       },
       storage: {
         label: "Storage",
-        access: "Mandatory",
-        prompts: false,
+        access: "Optional",
+        prompts: true,
         limits: false,
       },
       biometrics: {
         label: "Biometrics",
-        access: "Optional",
+        access: "Not Applicable",
         prompts: false,
-        limits: true,
+        limits: false,
       },
       healthData: {
         label: "Health Data",
@@ -66,33 +66,33 @@ export default {
     dataHandling: {
       dataCollection: "Yes",
       dataTransmissionFreq: "Always",
-      thirdPartySharing: "Yes",
-      thirdPartySharingConsent: "Yes",
+      thirdPartySharing: "No",
+      thirdPartySharingConsent: "Not Applicable",
     },
-    updateAlerts: "No",
+    updateAlerts: "Yes",
   },
   userRightsProps: {
-    adsOptOut: "Not Allowed",
+    adsOptOut: "Allowed",
     accountDel: "Allowed",
     dataExport: "Allowed",
   },
   monetizationProps: {
     usageCost: {
       price: "Free",
-      note: "with ads",
+      note: "with in-app purchases",
     },
     recurringPayments: "No",
     inAppPurchases: "Yes",
   },
   deviceResourcesProps: {
-    batteryImpact: "8",
+    batteryImpact: 5,
     storage: {
-      size: 250,
+      size: 180,
       unit: "MB",
     },
     internet: {
       req: "Yes",
-      dataPh: "50 MB/hr",
+      dataPh: "35MB/hr",
     },
   },
 };

@@ -23,11 +23,11 @@ const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const options = [
-    { name: "Example Browser", path: "/app/example-browser", image: web },
-    { name: "Example Email", path: "/app/example-email", image: mail },
-    { name: "Example Music", path: "/app/example-music", image: music },
-    { name: "Example Maps", path: "/app/example-maps", image: maps },
-    { name: "Example Photos", path: "/app/example-photos", image: photos },
+    { name: "Mood Notes", path: "/app/example-browser", image: web },
+    { name: "Finch App", path: "/app/example-email", image: mail },
+    { name: "Daylio app", path: "/app/example-music", image: music },
+    { name: "Bearable symptoms and mood tracker", path: "/app/example-maps", image: maps },
+    { name: "Aetheria", path: "/app/example-photos", image: photos },
   ];
 
   const filteredOptions = options.filter((option) =>

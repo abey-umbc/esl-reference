@@ -1,42 +1,42 @@
 export default {
   headerProps: {
-    appName: "Example Music",
+    appName: "Daylio",
     platform: "iOS",
-    iconSlug: "music",
+    iconSlug: "daylio",
     isAccessible: true,
-    version: "3.7.2",
-    evaluatedOn: "November 18, 2023",
+    version: "3.5.2",
+    evaluatedOn: "February 18, 2025",
   },
   interruptionsProps: {
-    notifications: 4,
+    notifications: 3,
     popups: 2,
-    text: 0,
+    text: 1,
   },
   privacyProps: {
     permissions: {
       camera: {
         label: "Camera",
-        access: "Not Applicable",
-        prompts: false,
-        limits: false,
-      },
-      mic: {
-        label: "Microphone",
         access: "Optional",
         prompts: true,
         limits: true,
       },
-      photos: {
-        label: "Photos",
+      mic: {
+        label: "Microphone",
         access: "Not Applicable",
         prompts: false,
+        limits: false,
+      },
+      photos: {
+        label: "Photos",
+        access: "Optional",
+        prompts: true,
         limits: false,
       },
       loc: {
         label: "Location",
-        access: "Optional",
+        access: "Mandatory",
         prompts: true,
-        limits: true,
+        limits: false,
       },
       contacts: {
         label: "Contacts",
@@ -46,15 +46,15 @@ export default {
       },
       storage: {
         label: "Storage",
-        access: "Mandatory",
+        access: "Optional",
         prompts: true,
         limits: false,
       },
       biometrics: {
         label: "Biometrics",
-        access: "Optional",
-        prompts: true,
-        limits: true,
+        access: "Not Applicable",
+        prompts: false,
+        limits: false,
       },
       healthData: {
         label: "Health Data",
@@ -66,33 +66,33 @@ export default {
     dataHandling: {
       dataCollection: "Yes",
       dataTransmissionFreq: "Always",
-      thirdPartySharing: "Yes",
-      thirdPartySharingConsent: "Yes",
+      thirdPartySharing: "No",
+      thirdPartySharingConsent: "Not Applicable",
     },
     updateAlerts: "Yes",
   },
   userRightsProps: {
-    adsOptOut: "Not Applicable", 
+    adsOptOut: "Allowed",
     accountDel: "Allowed",
     dataExport: "Allowed",
   },
   monetizationProps: {
     usageCost: {
-      price: "Subscription-based",
-      note: "free trial",
+      price: "Free",
+      note: "with in-app purchases",
     },
-    recurringPayments: "Yes",
-    inAppPurchases: "No",
+    recurringPayments: "No",
+    inAppPurchases: "Yes",
   },
   deviceResourcesProps: {
-    batteryImpact: 5,
+    batteryImpact: 4,
     storage: {
       size: 150,
       unit: "MB",
     },
     internet: {
       req: "Yes",
-      dataPh: "Varies",
+      dataPh: "30MB/hr",
     },
   },
 };
